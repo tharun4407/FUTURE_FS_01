@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.771bcd05.css",
+    "main.js": "/static/js/main.83d4f812.js",
+    "static/media/achievement2.jpg": "/static/media/achievement2.921478c8f2ea9296c8c9.jpg",
+    "static/media/achievement3.jpg": "/static/media/achievement3.53cfebb37fe0036686e5.jpg",
+    "static/media/achievement1.jpg": "/static/media/achievement1.9eb8938c15207aaacb19.jpg",
+    "index.html": "/index.html",
+    "main.771bcd05.css.map": "/static/css/main.771bcd05.css.map",
+    "main.83d4f812.js.map": "/static/js/main.83d4f812.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.771bcd05.css",
+    "static/js/main.83d4f812.js"
+  ]
+}

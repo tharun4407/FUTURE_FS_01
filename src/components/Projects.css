@@ -1,0 +1,130 @@
+/* SECTION */
+.projects__label {
+  color: var(--accent-purple);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.projects__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* CARD */
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ IMAGE SECTION (NEW) */
+.projects__image {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* OPTIONAL DARK OVERLAY */
+.projects__image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* CONTENT */
+.projects__content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* TITLE */
+.projects__card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.projects__card-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* TAGS */
+.projects__card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.projects__tag {
+  padding: 4px 12px;
+  background: rgba(247, 57, 57, 0.15);
+  border: 1px solid rgba(247, 57, 57, 0.2);
+  border-radius: 16px;
+  font-size: 0.8rem;
+  color: var(--accent-blue);
+}
+
+/* FEATURES */
+.projects__card-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.projects__card-features li {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  padding: 4px 0 4px 16px;
+  position: relative;
+}
+
+.projects__card-features li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent-purple);
+}
+
+/* LINK */
+.projects__card-link {
+  color: var(--accent-purple);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.projects__card-link:hover {
+  color: var(--accent-pink);
+}
